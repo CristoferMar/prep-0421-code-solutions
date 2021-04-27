@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Complete the HTML here -->
+  <h1>Indiana Jones</h1>
+    <div class="container">
+      <div class="row">
+
+        <div class="column">
+          <img src="./images/raiders.jpg">
+          <h3>Raiders of the Lost Ark</h3>
+          <p>Hashtag af la croix paleo. Poke small batch prism raclette, yr 3 wolf moon banh mi crucifix mustache wayfarers
+            actually synth la croix roof party. DIY single-origin coffee thundercats blog sriracha. Trust fund woke pok pok
+            squid, fashion axe tbh farm-to-table subway tile.</p>
+        </div>
+
+        <div class="column">
+          <img src="./images/temple.jpg">
+          <h3>Temple of Doom</h3>
+          <p>Pinterest readymade snackwave, sartorial fanny pack selfies fashion axe occupy yuccie cray tousled.
+            Asymmetrical green juice chambray jianbing master cleanse. Meh brunch crucifix neutra kinfolk, synth fixie
+            scenester beard. Occupy adaptogen pok pok cold-pressed.</p>
+        </div>
+
+        <div class="column">
+          <img src="./images/crusade.png">
+          <h3>The Last Crusade</h3>
+          <p>Iceland trust fund iPhone banjo cronut skateboard YOLO messenger bag shabby chic freegan kale chips plaid. La
+            croix truffaut synth, tote bag intelligentsia quinoa YOLO paleo four loko tofu snackwave twee schlitz.
+            Dreamcatcher man bun pour-over lumbersensual.</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
